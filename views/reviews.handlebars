@@ -1,10 +1,8 @@
-<h1>Reviews</h1>
+<h1>Book Reviews</h1>
 <ul>
-  {{#each reviews}}
-  <li>
-    <h3>Book ID: {{this.bookId}}</h3>
-    <p>Review: {{this.reviewText}}</p>
-    <p>Rating: {{this.rating}}</p>
-  </li>
-  {{/each}}
+    {{#each reviews}}
+    <li>{{this.title}} - {{this.reviewText}} (Rating: {{this.rating}})</li>
+    {{else}}
+    <li>No reviews available.</li>
+    {{/each}}
 </ul>
