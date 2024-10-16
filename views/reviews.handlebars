@@ -1,0 +1,10 @@
+<h1>Reviews</h1>
+<ul>
+  {{#each reviews}}
+  <li>
+    <h3>Book ID: {{this.bookId}}</h3>
+    <p>Review: {{this.reviewText}}</p>
+    <p>Rating: {{this.rating}}</p>
+  </li>
+  {{/each}}
+</ul>
